@@ -27,7 +27,7 @@ public class StartMission {
 		context = new ClassPathXmlApplicationContext("com/missiontomars/beans/jdbcbeans.xml");
 		initialize();
 //		deployRovers();
-		// showResult();
+		// showResult();      
 		((ClassPathXmlApplicationContext) context).close();
 	}
 
