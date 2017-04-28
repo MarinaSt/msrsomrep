@@ -24,7 +24,6 @@ public class StartMission {
 	private static String sequence;
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		context = new ClassPathXmlApplicationContext("com/missiontomars/beans/jdbcbeans.xml");
 		initialize();
 //		deployRovers();
