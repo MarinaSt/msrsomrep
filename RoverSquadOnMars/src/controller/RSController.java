@@ -1,5 +1,7 @@
 package controller;
 
+import model.Rover;
+
 public class RSController {
 
 	
@@ -18,6 +20,11 @@ public class RSController {
 	 * Rovers
 	 */
 	public void initialize(){
+		Rover r1 = new Rover();
 		
+		//manufacture.setVehicle(r1);
+		//manufacture.moveVehicle();
 	}
+	
+	
 }
