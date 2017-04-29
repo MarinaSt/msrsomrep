@@ -10,17 +10,12 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 @Configuration
 @EnableAutoConfiguration
-@ComponentScan	
-@Controller	
+@ComponentScan({"controller", "service"})
+@Controller
 public class MissionToMarsWebAppApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(MissionToMarsWebAppApplication.class, args);
 	}
 	
-	@ResponseBody
-	@RequestMapping("/")
-	String entry(){
-		return "home";
-	}
 }
