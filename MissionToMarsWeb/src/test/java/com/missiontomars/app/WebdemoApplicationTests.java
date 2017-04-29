@@ -1,4 +1,4 @@
-package com.prototype;
+package com.missiontomars.app;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
