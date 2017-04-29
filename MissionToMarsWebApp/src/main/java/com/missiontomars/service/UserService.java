@@ -16,13 +16,21 @@ public class UserService {
 		u.setEmail("mst@t.com");
 		u.setName("me");
 		u.setPassword("w3");
+
+		users.put("0", u);
 	}
+
 	
-	public User getUser(int id){
-		return users.get(id);
+	//TODO: get single user by passind ID, currently doesn´t work, guess cause of id type string / int
+	public User getUser(int id) {
+		if (users.containsKey(id + "")) {
+			System.out.println(users.get(id));
+			return users.get(id);
+		} else
+			return null;
 	}
-	
-	public Hashtable<String, User> getAllUser(){
+
+	public Hashtable<String, User> getAllUser() {
 		return users;
 	}
 }

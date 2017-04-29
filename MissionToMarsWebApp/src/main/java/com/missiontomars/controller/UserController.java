@@ -24,7 +24,7 @@ public class UserController {
 	}
 	
 	@RequestMapping("{id}")
-	public User getUser(@PathVariable("id") int iD){
-		return us.getUser(iD);
+	public User getUser(@PathVariable("id") int id){
+		return us.getUser(id);
 		}
 }
